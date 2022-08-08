@@ -733,6 +733,10 @@ body {
 .footer-info .logo-second {
     color: #FFFFFF;
 }
+
+.footer-subscription {
+    
+}
 /* ========== Footer ========== */
 
 /* ========== Modal Window ========== */
@@ -872,6 +876,10 @@ body {
     letter-spacing: 0.03em;
     
     color: var(--secondary-text-color-theme-light);
+
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .modal-form-input-icon {
@@ -913,16 +921,34 @@ body {
     border-color: var(--accent-color);
 }
 
+
+
 .modal-form-check-desc::before {
-    display: block;
+    content: '';
+    display: inline-block;
     width: 16px;
     height: 15px;
+    
     border: 2px solid var(--primary-text-color-theme-light);
-    content: '';
     cursor: pointer;
     border-radius: 2px;
-    margin-right: 10px;
+    margin-right: 7px;
+
+    
 }
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+    background-image: url(../images/icon/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background: var(--accent-color);
+    
+}
+
+.modal-form-check {
+    clip: rect(0 0 0 0);
+}
+
 
 /* .modal-form-submit {
     font-family: var(--primary-font);
