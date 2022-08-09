@@ -403,14 +403,19 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="fotter-form">
                 <strong class="footer-subscribe">Подпишитесь на рассылку</strong>
                 <form class="subscribe-form">
                     <input type="email" name="email" class="subscribe-form-input" placeholder="E-mail">
                     <label class="subscribe-form-label"
                     ></label>
-                    <button type="button" class="button-subscribe">Подписаться
-                    </button>
+                    <span class="button-send">
+                        <button type="button" class="button-subscribe">Подписаться
+                        </button>
+                        <!-- <svg class="icon-icon-send" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-icon-send"></use>
+                        </svg> -->
+                    </span>
                 </form>
             </div>
         </div>
@@ -463,11 +468,12 @@
                     placeholder="Введите текст"
                     ></textarea>
                 </label>
-                <input type="checkbox" class="modal-form-check"
+                <input type="checkbox" class="modal-form-check visually-hidden"
                 id="user-policy" name="user_policy">
                 <label for="user-policy" class="modal-form-check-desc">
-                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="">Условия договора</a>
                 </label>
+                
                 <button type="submit" class="modal-form-submit">Отправить</button>
             </form>
         </div>
